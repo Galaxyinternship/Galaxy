@@ -15,6 +15,7 @@
     -->
     <section id="docker" name="Docker Toolbox" version="">
         <tool id="smalt_wrapper (docker)" />
+        <tool id="fastqc (docker)" />
     </section>
     <section id="getext" name="Get Data" version="">
         <tool id="upload1" />
