@@ -10,7 +10,7 @@
         <regex match="Exception:" />
     </stdio>
     <command>
-    fastqc.py
+    python /usr/bin/fastqc.py
         -i "$input_file"
         -d "$html_file.files_path"
         -o "$html_file"
