@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- A sample job config that explicitly configures job running the way it is configured by default (if there is no explicit config). -->
+<job_conf>
+    <plugins workers="4">
+        <plugin id="local" type="runner" load="galaxy.jobs.runners.local:LocalJobRunner" workers="4"/>
+    </plugins>
+    <handlers default="main">
+        <handler id="main"/>
+    </handlers>
+    <destinations default="local">
+        <destination id="local" runner="local"/>
+        <destination id="docker_local" runner="local">
+          <param id="docker_enabled">true</param>
+        </destination>
+    </destinations>
+    <tools>
+        <tool id="smalt_wrapper (docker)" destination="docker_local"/>
+        <tool id="fastqc (docker)" destination="docker_local" />
+    </tools>
+</job_conf>
