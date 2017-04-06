@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 """
 Read a MAF from standard input and print counts of alignments, bases, or 

@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 """
 Read two lists of intervals (with chromosomes) and count the number of entries

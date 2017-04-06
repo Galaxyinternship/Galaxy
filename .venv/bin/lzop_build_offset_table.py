@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 """
 Read a compressed file as created by 'lzop' from stdin and write a table to 

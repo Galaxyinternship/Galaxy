@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 """
 Match up intersecting intervals from two files. This performs a "full join", 

@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 from __future__ import with_statement
 

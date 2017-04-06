@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 """
 Application to convert LAV file to AXT file. Reads a LAV file from standard 
 input and writes a AXT file to standard out;  some statistics are written 

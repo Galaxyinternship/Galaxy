@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 # Author: Chris Moyer <cmoyer@newstex.com>
 # Description: CloudWatch Utility
 # For listing stats, creating alarms, and managing 

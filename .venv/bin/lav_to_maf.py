@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 """
 Application to convert LAV file to MAF file. Reads a LAV file from standard 
 input and writes a MAF file to standard out; some statistics are written to 

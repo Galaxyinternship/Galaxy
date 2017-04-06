@@ -9,22 +9,21 @@
         <regex match="Error:" />
         <regex match="Exception:" />
     </stdio>
-    <command>
-    python /usr/bin/fastqc.py
-        -i "$input_file"
-        -d "$html_file.files_path"
-        -o "$html_file"
-        -t "$text_file"
-        -f "$input_file.ext"
-        -j "$input_file.name"
-        -e "/usr/local/FastQC/fastqc"
-        #if $contaminants.dataset and str($contaminants) > ''
-            -c "$contaminants"
-        #end if
-        #if $limits.dataset and str($limits) > ''
-            -l "$limits"
-        #end if
-    </command>
+    <command><![CDATA[
+         python /usr/bin/fastqc.py
+            -i '$input_file'
+            -d '${html_file.files_path}'
+            -o '$html_file'
+            -t '$text_file'
+            -f '${input_file.ext}'
+            -j '${input_file.name}'
+            #if $contaminants.dataset and str($contaminants) > ''
+                -c '$contaminants'
+            #end if
+            #if $limits.dataset and str($limits) > ''
+                -l '$limits'
+            #end if
+    ]]></command>
     <inputs>
         <param format="fastqsanger,fastq,bam,sam" name="input_file" type="data" label="Short read data from your current history" />
         <param name="contaminants" type="data" format="tabular" optional="true" label="Contaminant list" 

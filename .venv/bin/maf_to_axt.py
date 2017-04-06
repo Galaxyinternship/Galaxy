@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 """
 Application to convert MAF file to AXT file, projecting to any two species. 
 Reads a MAF file from standard input and writes an AXT file to standard out;  

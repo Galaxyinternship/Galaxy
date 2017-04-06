@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 
 """Map features from the target species to the query species of a chain alignment file.
 This is intended for mapping relatively short features such as Chip-Seq

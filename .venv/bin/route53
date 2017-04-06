@@ -1,4 +1,4 @@
-#!/home/dannyle/Desktop/Galaxy/.venv/bin/python
+#!/home/dannyle/Internship/Galaxy/.venv/bin/python
 # Author: Chris Moyer
 #
 # route53 is similar to sdbadmin for Route53, it's a simple
