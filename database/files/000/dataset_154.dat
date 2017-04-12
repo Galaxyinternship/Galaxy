@@ -1,0 +1,5 @@
+@HD	VN:1.3	SO:unknown
+@SQ	SN:a	LN:59
+@PG	ID:smalt	PN:smalt	VN:0.7.3	CL:smalt_unknown map -n 4 -o /home/dannyle/Internship/Galaxy/database/files/000/dataset_154.dat /tmp/tmpXclVkx/tmpf3iN2B /home/dannyle/Internship/Galaxy/database/files/000/dataset_85.dat
+1	4	*	0	0	*	*	0	0	AAAA	IIII	NM:i:0	AS:i:0
+2	4	*	0	0	*	*	0	0	AAAA	IIII	NM:i:0	AS:i:0

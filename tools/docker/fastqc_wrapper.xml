@@ -1,7 +1,7 @@
 <tool id="fastqc (docker)" name="FastQC" version="0.63">
     <description>Read Quality Reporting</description>
     <requirements>
-         <container type="docker">avengerpb/fastqcdocker</container>
+         <container type="docker">fastqc</container>
     </requirements>
     <stdio>
         <exit_code range="1:" />
@@ -9,21 +9,21 @@
         <regex match="Error:" />
         <regex match="Exception:" />
     </stdio>
-    <command><![CDATA[
-         python /usr/bin/fastqc.py
+    <command>
+        fastqc.py
             -i '$input_file'
-            -d '${html_file.files_path}'
+            -d '/tmp/'
             -o '$html_file'
             -t '$text_file'
             -f '${input_file.ext}'
             -j '${input_file.name}'
-            #if $contaminants.dataset and str($contaminants) > ''
+            #if $contaminants.dataset and str($contaminants) 
                 -c '$contaminants'
             #end if
-            #if $limits.dataset and str($limits) > ''
+            #if $limits.dataset and str($limits)
                 -l '$limits'
             #end if
-    ]]></command>
+    </command>
     <inputs>
         <param format="fastqsanger,fastq,bam,sam" name="input_file" type="data" label="Short read data from your current history" />
         <param name="contaminants" type="data" format="tabular" optional="true" label="Contaminant list" 
@@ -35,20 +35,6 @@
         <data format="html" name="html_file" label="${tool.name} on ${on_string}: Webpage" />
         <data format="txt" name="text_file"  label="${tool.name} on ${on_string}: RawData" />
     </outputs>
-    <tests>
-        <test>
-            <param name="input_file" value="1000gsample.fastq" />
-            <param name="contaminants" value="fastqc_contaminants.txt" ftype="tabular" />
-            <output name="html_file" file="fastqc_report.html" ftype="html" lines_diff="100"/>
-            <output name="text_file" file="fastqc_data.txt" ftype="txt" lines_diff="100"/>
-        </test>
-        <test>
-            <param name="input_file" value="1000gsample.fastq" />
-            <param name="limits" value="fastqc_customlimits.txt" ftype="txt" />
-            <output name="html_file" file="fastqc_report2.html" ftype="html" lines_diff="100"/>
-            <output name="text_file" file="fastqc_data2.txt" ftype="txt" lines_diff="100"/>
-        </test>
-    </tests>
     <help>
 
 .. class:: infomark
